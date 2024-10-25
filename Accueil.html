@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LES COURS DE 1RE GENERALE</title>
+    <style>
+        body {
+            font-family: Carlito, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            text-align: center;
+            padding: 2em;
+        }
+        nav a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content {
+            text-align: center;
+            padding: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header>
+        <h1>LES COURS DE 1RE GENERALE</h1>
+        <p>Fiches de cours, évaluations, et exercices</p>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="content">
+        <h2>Choisissez une matière</h2>
+        <nav>
+            <a href="Allemand.html">Allemand</a>
+            <a href="Anglais.html">Anglais</a>
+            <a href="ESPC.html">Enseignement Scientifique Physique-Chimie</a>
+            <a href="essvt.html">Enseignement Scientifique SVT</a>
+            <a href="Français.html">Français</a>
+            <a href="Geo.html">Géographie</a>
+            <a href="Histoire.html">Histoire</a>
+            <a href="Italien.html">Italien</a>
+            <a href="Maths.html">Mathématiques</a>
+            <a href="NSI.html">NSI</a>
+            <a href="PC.html">Physique-Chimie</a>
+        </nav>
+    </main>
+
+<!-- Section Emploi du temps -->
+<section class="content">
+    <h2>Emploi du Temps</h2>
+    <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <thead>
+            <tr style="background-color: #333; color: white;">
+                <th>Horaires</th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00 - 09:00</td>
+                <td>Histoire-Géographie</td>
+                <td></td>
+                <td>
+                    <div style="display: flex; justify-content: space-between; align-items: center; height: 50px;">
+                        <div style="width: 48%; text-align: center;">Histoire</div>
+                        <div style="width: 1px; background-color: black; height: 100%;"></div> <!-- Barre verticale -->
+                        <div style="width: 48%; text-align: center;"></div>
+                    </div>
+                </td>
+                <td rowspan="2">NSI</td>
+                <td rowspan="2">Physique-Chimie</td>
+            </tr>
+            <tr>
+                <td>09:00 - 10:00</td>
+                <td>Anglais</td>
+                <td>Allemand</td>
+                <td rowspan="2"
+                    <!-- Division de la cellule en deux parties avec une barre au centre -->
+                    <div style="display: flex; justify-content: space-between; align-items: stretch; height: 100%;">
+                        <!-- Partie pour un cours de 2 heures consécutives -->
+                        <div style="width: 48%; padding: 10px; text-align: center;">
+                            Français
+                        </div>
+
+                        <!-- Barre verticale entre les deux sections -->
+                        <div style="width: 1px; background-color: black;"></div>
+
+                        <!-- Partie pour deux cours distincts d'une heure -->
+                        <div style="width: 48%; display: flex; flex-direction: column;">
+                            <div style="flex: 1; padding: 5px; text-align: center; border-bottom: 1px solid black;">
+								<div style="height: 10px;"></div> 
+                            </div>
+                            <div style="flex: 1; padding: 5px; text-align: center;">
+                                Français
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td rowspan="2">EPS</td>
+                <td>Français</td>
+                <td rowspan="2">Mathématiques</td>
+                <td rowspan="2">NSI</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td>Pause Repas</td>
+                <td>Pause Repas</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:00</td>
+                <td rowspan="2">Pause Repas</td>
+                <td>Anglais</td>
+                <td>Allemand<br><i>(1 semaine sur 4)</i></td>
+                <td>Pause Repas</td>
+                <td rowspan="2">Pause Repas</td>
+            </tr>
+            <tr>
+                <td>13:00 - 14:00</td>
+                <td>Pause Repas</td>
+                <td rowspan="5"></td>
+                <td>ES Physique Chimie</td>
+            </tr>
+            <tr>
+                <td>14:00 - 15:00</td>
+                <td>Français</td>
+                <td rowspan="2">Physique-Chimie</td>
+                <td>Allemand</td>
+                <td>
+                    <div style="display: flex; justify-content: space-between; align-items: center; height: 50px;">
+                        <div style="width: 48%; text-align: center;">Histoire</div>
+                        <div style="width: 1px; background-color: black; height: 100%;"></div> <!-- Barre verticale -->
+                        <div style="width: 48%; text-align: center;">Français</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>15:00 - 16:00</td>
+                <td rowspan="2">Italien</td>
+                <td>ES SVT</td>
+				<td>
+                    <div style="display: flex; justify-content: space-between; align-items: center; height: 50px;">
+                        <div style="width: 48%; text-align: center;">EMC</div>
+                        <div style="width: 1px; background-color: black; height: 100%;"></div> <!-- Barre verticale -->
+                        <div style="width: 48%; text-align: center;"></div>
+                    </div>
+                </td>
+            </tr>
+			<tr>
+                <td>16:00 - 17:00</td>
+                <td rowspan="2">Mathématiques</td>
+                <td>
+                    <div style="display: flex; justify-content: space-between; align-items: center; height: 50px;">
+                        <div style="width: 48%; text-align: center;">Anglais<br><i>(1 semaine sur 4)</i></div>
+                        <div style="width: 1px; background-color: black; height: 100%;"></div> <!-- Barre verticale -->
+                        <div style="width: 48%; text-align: center;">Histoire-Géographie</div>
+                    </div>
+                </td>
+                <td>Italien</td>
+            </tr>
+			<tr>
+                <td>17:00 - 18:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              
+            </tr>
+        </tbody>
+    </table>
+</section>
+   <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Les cours de 1re générale. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

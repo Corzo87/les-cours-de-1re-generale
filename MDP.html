@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accès au site</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "motDePasseSecret") { // Changez "motDePasseSecret" par votre mot de passe
+                window.location.href = "home.html"; // Page à afficher si le mot de passe est correct
+            } else {
+                alert("Mot de passe incorrect");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Veuillez entrer le mot de passe pour accéder au site</h1>
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="checkPassword()">Entrer</button>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page protégée</title>
+</head>
+<body>
+    <h1>Bienvenue sur la page protégée</h1>
+    <p>Contenu accessible uniquement aux utilisateurs avec le mot de passe correct.</p>
+</body>
+</html>

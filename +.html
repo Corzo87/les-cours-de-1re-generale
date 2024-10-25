@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Introduction</title>
+	<style>
+        body {
+            font-family: Carlito, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            text-align: center;
+            padding: 2em;
+        }
+        nav a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content {
+            text-align: center;
+            padding: 2em;
+        }
+		p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            font-size: 1.5em;
+        }
+    </style>
+    <script>
+        // Fonction de redirection après 5 secondes
+        setTimeout(function() {
+            window.location.href = "Accueil.html"; // Remplacez par le nom de la page cible
+        }, 5000); // 5000 millisecondes = 5 secondes
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Authentification réussi vous allez être redirigé sur le site</h1>
+    <p style="text-align: center;">Chargement en cours, veuillez patienter...</p>
+</body>
+</html>
